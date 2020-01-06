@@ -71,15 +71,52 @@ ul.todo li {
 .container{
   width: 100%;
   float: left;
-  padding: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #FFF;
+  border-radius: 15px 15px 15px 15px ;
+  outline-style: dotted;
 }
-ul.todo li:last-of-type{
-  margin:0;
+.priority {
+  font-size: 20px;
+  position:relative;
+  margin-top: 3%;
+  margin-bottom: auto;
+  margin-left: 0%;
+  margin-right: 9px;
 }
-ul.todo li .buttons{
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  top:0;
-  right:0:
+.priority:hover{
+  color: blue;
+}
+.thang{
+  font-size: 20px;
+  text-align: center;
+  position:relative;
+  margin-right: auto;
+  font-family: georgia;
+  text-align: center;
+  text-indent: 5em;
+}
+
+.completed{
+  font-size: 20px;
+  position:relative;
+  margin-top: 3%;
+  margin-bottom: auto;
+  margin-left: 2%;
+  margin-right: auto;
+}
+.completed:hover{
+ color: green;
+}
+.remove {
+  font-size: 20px;
+  position:relative;
+  margin-right: auto;
+}
+.remove:hover{
+  color: red;
+}
+li{
+  list-style-type: none;
 }
