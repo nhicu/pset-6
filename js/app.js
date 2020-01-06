@@ -1,7 +1,11 @@
 //click on add button
-document.getElementById('add').addEventListener('click', function() {
-  var value = document.getElementById('item').value;
-  if (value) {
-    addItem(value);
-  }
-});
+
+window.onload = function() {
+    document.getElementById("add").onclick = addItemToDo;
+}
+
+const items = [];
+
+const addItemToDo= function() {
+  const text = document.getElementById("textbox").value;
+}

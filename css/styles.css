@@ -70,15 +70,16 @@ ul.todo li {
 }
 .container{
   width: 100%;
+  height: 60%;
   float: left;
   margin-left: 0px;
   margin-right: 0px;
   background: #FFF;
   border-radius: 15px 15px 15px 15px ;
-  outline-style: dotted;
+
 }
 .priority {
-  font-size: 20px;
+  font-size: 40px;
   position:relative;
   margin-top: 3%;
   margin-bottom: auto;
@@ -89,7 +90,7 @@ ul.todo li {
   color: blue;
 }
 .thang{
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   position:relative;
   margin-right: auto;
@@ -99,7 +100,7 @@ ul.todo li {
 }
 
 .completed{
-  font-size: 20px;
+  font-size: 40px;
   position:relative;
   margin-top: 3%;
   margin-bottom: auto;
@@ -110,7 +111,7 @@ ul.todo li {
  color: green;
 }
 .remove {
-  font-size: 20px;
+  font-size: 40px;
   position:relative;
   margin-right: auto;
 }
