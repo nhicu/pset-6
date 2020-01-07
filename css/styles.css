@@ -72,7 +72,7 @@ table {
   color: #f1daf5;
   font-weight: 400;
 }
-.to_do {
+.todo {
   font-family: sans-serif;
   text-align: center;
   border: 2px solid;
@@ -80,7 +80,7 @@ table {
   font-size: 25px;
   border-radius: 5px;
 }
-.to_do:hover {
+.todo:hover {
   background-color: lightgrey;
   color: black;
   border-color: black;
@@ -89,19 +89,19 @@ table {
     margin-top: 20px;
     height: 40px;
 }
-.priority_button {
+.prioritybutton {
     width: 40px;
     text-align: center;
     background-color: LightCyan;
     border: 2px solid;
     border-radius: 5px;
 }
-.priority_button:hover {
+.prioritybutton:hover {
     background-color: lightblue;
     color: black;
     border-color: #F08080;
 }
-.complete_button {
+.completebutton {
     align: left;
     width: 40px;
     text-align: center;
@@ -109,12 +109,12 @@ table {
     border-radius: 5px;
     border: 2px solid;
 }
-.complete_button:hover {
+.completebutton:hover {
     background-color: lightblue;
     color: black;
     border-color: #F08080;
 }
-.remove_button {
+.removebutton {
     align: left;
     width: 40px;
     text-align: center;
@@ -122,7 +122,7 @@ table {
     border: 2px solid;
     border-radius: 5px;
 }
-.remove_button:hover {
+.removebutton:hover {
     background-color: #ff4040;
     color: black;
     border-color: #F08080;

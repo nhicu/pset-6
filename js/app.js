@@ -1,10 +1,10 @@
 let elements = []
 var addButton = document.getElementById("add_button");
 var tableRow = document.getElementsByClassName("row");
-let priorityButton = document.getElementsByClassName("priority_button");
-let completeButton = document.getElementsByClassName("complete_button");
-let removeButton = document.getElementsByClassName("remove_button");
-let listItem = document.getElementsByClassName("to_do")
+let priorityButton = document.getElementsByClassName("prioritybutton");
+let completeButton = document.getElementsByClassName("completebutton");
+let removeButton = document.getElementsByClassName("removebutton");
+let listItem = document.getElementsByClassName("todo")
 
 let element_prioritize;
 
@@ -18,43 +18,41 @@ const create_item = function() {
 
   }
   else {
-      let to_do = {
+      let todo = {
           task: input,
           priority: false,
           complete: false,
           html_row: null,
-          html_priority_button: null,
+          html_prioritybutton: null,
           html_text: null,
-          html_remove_button: null
-      }
-
-      elements.push(to_do);
-      let index = elements.indexOf(to_do);
+          html_removebutton: null
+      }  elements.push(todo);
+      let index = elements.indexOf(todo);
 
       elements[index].htmlRow = document.createElement("tr");
       elements[index].htmlRow.setAttribute("class", "row");
       document.getElementById("table").append(elements[index].htmlRow);
 
       elements[index].htmlPriorityButton = document.createElement("td");
-      elements[index].htmlPriorityButton.setAttribute("class", "priority_button");
+      elements[index].htmlPriorityButton.setAttribute("class", "prioritybutton");
       elements[index].htmlPriorityButton.innerHTML = "!";
 
       tableRow[index].append(elements[index].htmlPriorityButton);
 
       elements[index].htmlText = document.createElement("td");
       elements[index].htmlText.innerHTML = elements[index].task;
-      elements[index].htmlText.setAttribute("class", "to_do");
+      elements[index].htmlText.setAttribute("class", "todo");
 
       tableRow[index].append(elements[index].htmlText);
 
       elements[index].htmlCompleteButton = document.createElement("td");
       elements[index].htmlCompleteButton.innerHTML = "&#x2713;";
-      elements[index].htmlCompleteButton.setAttribute("class", "complete_button");
+      elements[index].htmlCompleteButton.setAttribute("class", "completebutton");
 
       tableRow[index].append(elements[index].htmlCompleteButton);
 
       elements[index].htmlRemoveButton = document.createElement("td");
-      elements[index].htmlRemoveButton.setAttribute("class", "remove_button");
+      elements[index].htmlRemoveButton.setAttribute("class", "removebutton");
       elements[index].htmlRemoveButton.innerHTML = "X";
 
       tableRow[index].append(elements[index].htmlRemoveButton);
@@ -90,8 +88,7 @@ const finish_item = function() {
          completeButton[x].style.color = "#741885";
          completeButton[x].style.borderColor = "#741885";
          elements[x].complete = true;
-       }
-       else if (elements[x].complete == true) {
+       }else if (elements[x].complete == true) {
          completeButton[x].style.backgroundColor = "black";
          completeButton[x].style.color = "#A4FFA4"
          completeButton[x].style.borderColor = "#A4FFA4"
