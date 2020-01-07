@@ -41,8 +41,9 @@ text-align: center;
   font-size: 29px;
   background-color: lightgrey;
   border-color: #f1daf5;
+  color: black;
 }
-.button_add {
+.dabutton {
   width: 5%;
   padding: 10px;
   font-family: georgia;
@@ -61,7 +62,6 @@ table {
     border-radius: 25px;
     background-color: #F08080;
     font-family: sans-serif;
-    font-color: black;
 }
 
  td {
@@ -97,7 +97,7 @@ table {
     border-radius: 5px;
 }
 .prioritybutton:hover {
-    background-color: lightblue;
+    background-color: #93f080;
     color: black;
     border-color: #F08080;
 }
@@ -110,9 +110,9 @@ table {
     border: 2px solid;
 }
 .completebutton:hover {
-    background-color: lightblue;
+    background-color: blue;
     color: black;
-    border-color: #F08080;
+    border-color: #8d80f0;
 }
 .removebutton {
     align: left;

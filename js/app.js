@@ -4,7 +4,7 @@ var tableRow = document.getElementsByClassName("row");
 let priorityButton = document.getElementsByClassName("prioritybutton");
 let completeButton = document.getElementsByClassName("completebutton");
 let removeButton = document.getElementsByClassName("removebutton");
-let listItem = document.getElementsByClassName("todo")
+let listItem = document.getElementsByClassName("to_do")
 
 let element_prioritize;
 
@@ -18,7 +18,7 @@ const create_item = function() {
 
   }
   else {
-      let todo = {
+      let to_do = {
           task: input,
           priority: false,
           complete: false,
@@ -26,8 +26,10 @@ const create_item = function() {
           html_prioritybutton: null,
           html_text: null,
           html_removebutton: null
-      }  elements.push(todo);
-      let index = elements.indexOf(todo);
+      }
+
+      elements.push(to_do);
+      let index = elements.indexOf(to_do);
 
       elements[index].htmlRow = document.createElement("tr");
       elements[index].htmlRow.setAttribute("class", "row");
@@ -41,7 +43,7 @@ const create_item = function() {
 
       elements[index].htmlText = document.createElement("td");
       elements[index].htmlText.innerHTML = elements[index].task;
-      elements[index].htmlText.setAttribute("class", "todo");
+      elements[index].htmlText.setAttribute("class", "to_do");
 
       tableRow[index].append(elements[index].htmlText);
 
@@ -88,7 +90,8 @@ const finish_item = function() {
          completeButton[x].style.color = "#741885";
          completeButton[x].style.borderColor = "#741885";
          elements[x].complete = true;
-       }else if (elements[x].complete == true) {
+       }
+       else if (elements[x].complete == true) {
          completeButton[x].style.backgroundColor = "black";
          completeButton[x].style.color = "#A4FFA4"
          completeButton[x].style.borderColor = "#A4FFA4"
