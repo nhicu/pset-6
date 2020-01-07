@@ -1,3 +1,22 @@
+body {
+  background-color: LightCyan;
+}
+hr {
+  width: 90%;
+}
+
+h3 {
+  color: black;
+  font-align: center;
+  font-size: 30px;
+}
+p {
+  font-family: georgia;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
 .title {
 font-family: georgia;
 font-size: 70px;
@@ -24,8 +43,6 @@ text-align: center;
   border-color: #f1daf5;
 }
 .button_add {
-  border-radius: 25px;
-  border-width: 3px;
   width: 5%;
   padding: 10px;
   font-family: georgia;
@@ -44,7 +61,7 @@ table {
     border-radius: 25px;
     background-color: #F08080;
     font-family: sans-serif;
-    background:#F08080;
+    font-color: black;
 }
 
  td {
@@ -80,7 +97,7 @@ table {
     border-radius: 5px;
 }
 .priority_button:hover {
-    background-color: yellow;
+    background-color: lightblue;
     color: black;
     border-color: #F08080;
 }
@@ -109,24 +126,4 @@ table {
     background-color: #ff4040;
     color: black;
     border-color: #F08080;
-}
-body {
-  background-color: LightCyan;
-
-}
-hr {
-  width: 90%;
-}
-
-h3 {
-  color: #f1daf5;
-  font-align: center;
-  font-size: 30px;
-}
-p {
-  font-family: georgia;
-  font-size: 16px;
-  color: #f1daf5;
-  font-weight: 400;
-  text-align: center;
 }
