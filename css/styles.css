@@ -4,7 +4,6 @@ body {
 hr {
   width: 90%;
 }
-
 h3 {
   color: black;
   font-align: center;
@@ -23,11 +22,9 @@ font-size: 70px;
 color: #F08080;
 text-align: center;
 }
-
 .divider {
   color: #f1daf5;
 }
-
 .user_input {
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +60,6 @@ table {
     background-color: #F08080;
     font-family: sans-serif;
 }
-
  td {
   font-family: georgia;
   font-size: 16px;

@@ -27,7 +27,6 @@ const create_item = function() {
           html_text: null,
           html_removebutton: null
       }
-
       elements.push(to_do);
       let index = elements.indexOf(to_do);
 
@@ -61,7 +60,6 @@ const create_item = function() {
     }
     document.getElementById("input_item").value = "";
 };
-
 const remove_item = function() {
   var removed = false;
   for (let i = 0; i < removeButton.length; i++) {
@@ -76,7 +74,6 @@ const remove_item = function() {
     }
   }
 }
-
 const finish_item = function() {
   var finish = false;
   for (let x = 0; x < completeButton.length; x++) {
@@ -106,7 +103,6 @@ const finish_item = function() {
      }
   }
 }
-
 const prioritize_item = function() {
   var prioritize = false;
   for (let z = 0; z < priorityButton.length; z++) {
@@ -145,15 +141,12 @@ const prioritize_item = function() {
     }
   }
 }
-
 const startup = function() {
   remove_item();
   finish_item();
   prioritize_item();
 }
-
 addButton.onclick = create_item
-
 document.getElementById("input_item").addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     document.getElementById("add_button").click();
