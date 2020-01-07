@@ -87,8 +87,7 @@ const finish_item = function() {
          completeButton[x].style.color = "#741885";
          completeButton[x].style.borderColor = "#741885";
          elements[x].complete = true;
-       }
-       else if (elements[x].complete == true) {
+       }else if (elements[x].complete == true) {
          completeButton[x].style.backgroundColor = "black";
          completeButton[x].style.color = "#A4FFA4"
          completeButton[x].style.borderColor = "#A4FFA4"
